@@ -10,7 +10,7 @@ Please find the hosted build on Vercel [here](https://gineet-atlys.vercel.app/)
 
 # Important Things (Please Read)
 - `FunctionManager` can render different number of cards based on the config (based on instructions in the `FunctionManager.types.ts` file)
-- For an equation to be valid, it needs at least two operands with an operator in between
+- For an equation to be valid, it needs at least two operands with an operator in between (and **x** is the only valid variable).
 - If an equation is left empty, the result from previous function is simply passed onto the next non-empty card
 - I'm using *`eval`* since any library usage was **strong discouraged**, but we'd ideally use something like `mathjs` to parse and evaluate the equations.
 - All lines between components are dynamically generated through code on a canvas element (couldn't get the curved lines to be drawn)
