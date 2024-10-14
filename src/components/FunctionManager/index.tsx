@@ -115,7 +115,7 @@ const FunctionManager: FC<FunctionManagerProps> = ({
     []
   );
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     generatePairsAndDrawLines();
   }, [generatePairsAndDrawLines]);
 
@@ -142,6 +142,7 @@ const FunctionManager: FC<FunctionManagerProps> = ({
           />
           <FlowConnector
             classes='px-[13.5px] border-l border-atlys-yellow-100'
+            // @ts-expect-error --- Add ref callback function typing to props
             ref={el => (allRefs.current[0] = el)}
           />
         </div>
@@ -173,6 +174,7 @@ const FunctionManager: FC<FunctionManagerProps> = ({
         <div className='grid grid-cols-[max-content_1fr] border-2 rounded-2xl border-atlys-green-200 w-28 mt-2'>
           <FlowConnector
             classes='px-[13.5px] border-r border-atlys-green-100'
+            // @ts-expect-error --- Add ref callback function typing to props
             ref={el => allRefs.current[allRefs.current.length - 1] = el}
           />
           <p className='py-2 pr-4 flex-grow rounded-2xl font-bold text-lg leading-tight text-center'>
