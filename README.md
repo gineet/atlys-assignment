@@ -5,6 +5,9 @@ Assignment done using:
 - TailwindCSS
 - No external libraries
 
+Please find the hosted build on Vercel [here](https://gineet-atlys.vercel.app/)
+>https://gineet-atlys.vercel.app/
+
 # Important Things (Please Read)
 - `FunctionManager` can render different number of cards based on the config (based on instructions in the `FunctionManager.types.ts` file)
 - For an equation to be valid, it needs at least two operands with an operator in between
